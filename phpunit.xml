@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./vendor/autoload.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+>
+    <testsuites>
+        <testsuite name="Api Suite">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <includePath>.</includePath>
+        <const name="VIEWS_PATH" value="views/"/>
+        <const name="APP_PATH" value="app/"/>
+        <const name="CONFIG_PATH" value="app/config/"/>
+        <const name="LOGS_PATH" value="app/storage/logs/"/>
+        <const name="TEST_FILES_PATH" value="tests/files/"/>
+    </php>
+</phpunit>
